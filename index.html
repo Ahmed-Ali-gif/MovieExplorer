@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Explorer-Home</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsiveness.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            class="menue"
+            src="./asserts/icons/menu_35dp_999999_FILL0_wght400_GRAD0_opsz40.png"
+            alt=""
+          />
+          <img class="logo-img" src="./asserts/images/logo.png" alt="" />
+          <h1 class="logo-h1">Movie <span class="explorer">Explorer</span></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="#">Movies</a></li>
+          <li><a class="link" href="#">Favorites</a></li>
+          <li><a class="link" href="#">About</a></li>
+          <li><a class="link" href="#">Contact</a></li>
+        </ul>
+        <ul class="nav-icons">
+          <li>
+            <img
+              class="eye-icon"
+              src="./asserts/icons/visibility_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="./asserts/icons/heart_plus_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-container">
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="hero-h1">Find Movies you'll Love.</h1>
+            <p class="hero-p">
+              Search thousands of movies,explore details,rating and adding your
+              favourites.
+            </p>
+          </div>
+        </section>
+        <section>
+          <img class="hero-img" src="./asserts/images/hero.png" alt="" />
+        </section>
+      </div>
+      <div class="inpt-container">
+        <div class="inpt-div">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="search for a movie (e.g. Batman)"
+          />
+          <img
+            class="inpt-search"
+            src="./asserts/icons/search_25dp_999999_FILL0_wght400_GRAD0_opsz24.png"
+            alt=""
+          />
+        </div>
+        <button class="hero-btn">Search</button>
+      </div>
+      <div class="features">
+        <div class="sortBy">
+          <span class="feature-gap gap">Sort By</span>
+          <select class="selecting sortBy" name="" id="">
+            <option value="" disabled selected>Sort your movies</option>
+            <option value="">Popularity</option>
+            <option value="">Release Date</option>
+            <option value="">Rating</option>
+          </select>
+        </div>
+        <img class="filter" src="./asserts/icons/filter_list_35dp_6D63FF_FILL0_wght400_GRAD0_opsz40.png" alt="Filter">
+        <div class="genre">
+          <span class="feature-gap">Genre</span>
+          <select class="selecting genre" name="" id="">
+            <option value="" disabled selected>Filter by genre</option>
+            <option value="">Action</option>
+            <option value="">Comedy</option>
+            <option value="">Drama</option>
+          </select>
+        </div>
+        <div class="year">
+          <span class="feature-gap">Year</span>
+          <select class="selecting year"   name="" id="">
+            <option value="" disabled selected>Filter by year</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+            <option value="">2025</option>
+            <option value="">2026</option>
+          </select>
+        </div>
+        <button class="feature-btn">Clear Filters</button>
+      </div>
+      <div class="popularMovies-box">
+        <h2 class="popular-h2">Popular Movies</h2>
+        <span class="popular-span">120 results found</span>
+      </div>
+    </main>
+
+    <script src="./Script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--white-color);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+:root {
+  --primary-color: #1e1e1e;
+  --white-color: #ffffff;
+  --background-color: #121212;
+  --yellow-color: #ffd700;
+  --blue-color: #6c63ff;
+
+  --font-primary-size: 3.2rem;
+  --font-secondary-size: 2.4rem;
+  --font-tertiary-size: 1.6rem;
+  --font-small-size: 1.4rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  padding-right: 8rem;
+  background-color: var(--primary-color);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.logo-img {
+  width: 60px;
+  display: block;
+  max-width: 100%;
+}
+.logo-h1 {
+  font-size: var(--font-primary-size);
+  font-weight: bold;
+  color: var(--blue-color);
+}
+.explorer {
+  font-size: var(--font-secondary-size);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+.nav-links a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: var(--font-tertiary-size);
+  transition: color 0.1s ease-in-out;
+}
+.nav-links a:hover {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+.nav-icons {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+.menue {
+  display: none;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin: 0px 4rem;
+}
+.hero-h1 {
+  font-size: var(--font-primary-size);
+  color: var(--white-color);
+  font-weight: bold;
+  width: 50%;
+  line-height: 1.2;
+}
+.hero-img {
+  width: 500px;
+  display: block;
+  max-width: 100%;
+}
+.hero-p {
+  font-size: var(--font-secondary-size);
+  color: grey;
+  margin-top: 1rem;
+  width: 60%;
+  line-height: 1.5;
+}
+.inpt-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  width: 40rem;
+  color: var(--blue-color);
+  padding: 0.9rem 1rem;
+  background-color: none;
+  font-size: var(--font-tertiary-size);
+  outline: none;
+}
+.inpt-search {
+  position: absolute;
+  left: 36.5rem;
+  cursor: pointer;
+}
+.inpt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.hero-btn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.9rem 1rem;
+  font-size: var(--font-tertiary-size);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+}
+.hero-btn:hover {
+  background-color: var(--yellow-color);
+  opacity: 0.9;
+}
+.hero-btn:active {
+  background-color: var(--yellow-color);
+  opacity: 0.8;
+}
+.hero-btn:focus {
+  background-color: var(--yellow-color);
+  opacity: 0.8;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 4rem;
+  background-color: var(--primary-color);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+}
+.feature-btn {
+  background-color: var(--background-color);
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  padding: 0.9rem 1rem;
+  font-size: var(--font-small-size);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+}
+.feature-gap {
+  color: var(--white-color);
+  font-size: var(--font-small-size);
+  font-weight: 400;
+  margin-right: 0.8rem;
+}
+select {
+  background-color: var(--background-color);
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  padding: 0.5rem 1.5rem;
+  font-size: var(--font-small-size);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+}
+.filter {
+  display: none;
+}
+.popularMovies-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 4rem;
+}
+.popular-h2{
+  font-size: var(--font-secondary-size);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.popular-span{
+  color: grey;
+  font-size: var(--font-small-size);
+  font-weight: bold;
+}
