@@ -33,6 +33,7 @@ nav {
   padding: 0.8rem 2rem;
   padding-right: 8rem;
   background-color: var(--primary-color);
+  width: 100%;
 }
 .logo {
   display: flex;
@@ -195,20 +196,221 @@ select {
 .filter {
   display: none;
 }
-.popularMovies-box{
+.popularMovies-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
   margin: 4rem;
 }
-.popular-h2{
+.popular-h2 {
   font-size: var(--font-secondary-size);
   color: var(--white-color);
   font-weight: bold;
 }
-.popular-span{
+.popular-span {
   color: grey;
   font-size: var(--font-small-size);
   font-weight: bold;
+}
+/* ---------------------- */
+.movie-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: auto;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin: 0px 4rem;
+  position: relative;
+}
+.box {
+  background-color: var(--primary-color);
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid var(--blue-color);
+}
+.box-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.box-h3 {
+  font-size: var(--font-small-size);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.box-p {
+  font-size: var(--font-small-size);
+  color: grey;
+  font-weight: 400;
+}
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.star {
+  color: var(--yellow-color);
+  font-size: var(--font-small-size);
+}
+.box-year {
+  font-size: var(--font-small-size);
+  color: grey;
+  font-weight: 400;
+}
+.sub-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0.6rem;
+}
+.box-content {
+  padding: 0px 0.5rem;
+}
+.fvourite-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 4rem;
+}
+.favourit-h2 {
+  font-size: var(--font-secondary-size);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.favourite-btn {
+  background-color: var(--background-color);
+  color: var(--white-color);
+  border: 1px solid var(--blue-color);
+  padding: 0.9rem 1rem;
+  font-size: var(--font-small-size);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+}
+.favourite-movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: auto;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+.favourite-movies-section {
+  margin: 4rem 4rem;
+  background-color: var(--primary-color);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+}
+.footer-section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 2rem;
+  margin: 4rem 4rem;
+}
+.footer-h3 {
+  font-size: var(--font-secondary-size);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.footer-p {
+  font-size: var(--font-small-size);
+  color: grey;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  width: 90%;
+}
+.footer-links {
+  list-style-type: none;
+  line-height: 2;
+}
+.nav-links {
+  font-size: var(--font-small-size);
+  text-decoration: none;
+  color: grey;
+  transition: color 0.1s ease-in-out;
+}
+.subscription-input {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  color: var(--blue-color);
+  padding: 0.9rem 1rem;
+  background-color: none;
+  font-size: var(--font-small-size);
+  outline: none;
+  margin: 0.5rem 0px;
+}
+.subscription-btn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.9rem 20%;
+  font-size: var(--font-small-size);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+}
+.icon-links {
+  color: var(--white-color);
+  font-size: var(--font-secondary-size);
+  transition: color 0.1s ease-in-out;
+}
+.links {
+  border-top: 1px solid var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+.nav-links:hover {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+.nav-icons a:hover {
+  color: var(--blue-color);
+}
+/* ------------------------------- */
+.eye-icon-toggle {
+  display: none;
+}
+.light-mode {
+  --primary-color: #ffffff;
+  --white-color: #1e1e1e;
+  --background-color: #f0f0f0;
+  --yellow-color: #ffd700;
+  --blue-color: #6c63ff;
+}
+.dark-mode {
+  --primary-color: #1e1e1e;
+  --white-color: #ffffff;
+  --background-color: #121212;
+  --yellow-color: #ffd700;
+  --blue-color: #6c63ff;
+}
+.toggle-heart-black {
+  display: none;
+}
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.btn-global {
+  padding: 0.5rem 5%;
+  font-size: var(--font-secondary-size);
+  background-color: var(--blue-color);
+  border-radius: 8px;
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.btn-global:hover {
+  background-color: #8a86e3;
 }

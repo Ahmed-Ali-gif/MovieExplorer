@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Explorer-Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/responsiveness.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,10 +46,19 @@
               src="./asserts/icons/visibility_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
               alt=""
             />
+            <img
+              class="eye-icon-toggle eye-icon"
+              src="./asserts/icons/visibility_off_30dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
           </li>
           <li>
-            <img
+            <img class="toggle-heart-white"
               src="./asserts/icons/heart_plus_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+            <img class="toggle-heart-black"
+              src="./asserts/icons/heart_plus_30dp_000000_FILL0_wght400_GRAD0_opsz24.png"
               alt=""
             />
           </li>
@@ -69,7 +85,7 @@
           <input
             type="text"
             name=""
-            id=""
+            id="search-inpt"
             placeholder="search for a movie (e.g. Batman)"
           />
           <img
@@ -78,9 +94,9 @@
             alt=""
           />
         </div>
-        <button class="hero-btn">Search</button>
+        <button class="hero-btn search-btn">Search</button>
       </div>
-      <div class="features">
+      <section class="features">
         <div class="sortBy">
           <span class="feature-gap gap">Sort By</span>
           <select class="selecting sortBy" name="" id="">
@@ -90,7 +106,11 @@
             <option value="">Rating</option>
           </select>
         </div>
-        <img class="filter" src="./asserts/icons/filter_list_35dp_6D63FF_FILL0_wght400_GRAD0_opsz40.png" alt="Filter">
+        <img
+          class="filter"
+          src="./asserts/icons/filter_list_35dp_6D63FF_FILL0_wght400_GRAD0_opsz40.png"
+          alt="Filter"
+        />
         <div class="genre">
           <span class="feature-gap">Genre</span>
           <select class="selecting genre" name="" id="">
@@ -102,7 +122,7 @@
         </div>
         <div class="year">
           <span class="feature-gap">Year</span>
-          <select class="selecting year"   name="" id="">
+          <select class="selecting year" name="" id="">
             <option value="" disabled selected>Filter by year</option>
             <option value="">2021</option>
             <option value="">2022</option>
@@ -113,11 +133,202 @@
           </select>
         </div>
         <button class="feature-btn">Clear Filters</button>
-      </div>
+      </section>
       <div class="popularMovies-box">
         <h2 class="popular-h2">Popular Movies</h2>
         <span class="popular-span">120 results found</span>
       </div>
+      <section class="movie-cards-container">
+        <div class="box">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="con"><button class="btn-global">Load More</button></div>
+      <section class="favourite-movies-section">
+        <div class="fvourite-box">
+          <h2 class="favourit-h2">Your Favourites</h2>
+          <button class="favourite-btn">View All</button>
+        </div>
+      <div class="favourite-movies-container">
+        <div class="box box_2">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box box_2">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box box_2">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box box_2">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="box box_2">
+          <img class="box-img" src="./asserts/images/marvel-img.jpeg" alt="" />
+          <div class="box-content">
+            <h3 class="box-h3">Marvel's Avengers</h3>
+            <div class="sub-box">
+              <div class="rating-box">
+                <i class="fa-solid fa-star star"></i>
+                <p class="box-p">Rating: 8.0</p>
+              </div>
+              <span class="box-year">2010</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <footer>
+        <section class="footer-section-container">
+          <div class="footer-container">
+            <h3 class="footer-h3">Movie Explorer</h3>
+            <p class="footer-p">
+              Discover and explore your favorite movies with Movie Explorer.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-h3">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a class="nav-links" href="#">Home</a></li>
+              <li><a class="nav-links" href="#">Movies</a></li>
+              <li><a class="nav-links" href="#">Favorites</a></li>
+              <li><a class="nav-links" href="#">About</a></li>
+              <li><a class="nav-links" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-genre">
+            <h3 class="footer-h3">Popular Genres</h3>
+            <ul class="footer-links">
+              <li><a class="nav-links" href="#">Action</a></li>
+              <li><a class="nav-links" href="#">Comedy</a></li>
+              <li><a class="nav-links" href="#">Drama</a></li>
+              <li><a class="nav-links" href="#">Horror</a></li>
+              <li><a class="nav-links" href="#">Sci-Fi</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-h3">Stay updated</h3>
+            <p class="footer-p">Subscribe to get the latest movie updates and news.</p>
+            <div class="subscription">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="subscription-input"
+              />
+              <button class="subscription-btn">Subscribe</button> 
+          </div>
+        </div>
+        </section>
+       <div class="links">
+         <p class="footer-p">© 2024 Movie Explorer. All rights reserved.</p>
+         <div class="sub-link-icons">
+            <a class="icon-links" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="icon-links" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="icon-links" href="#"><i  class="fa-brands fa-github"></i></a>
+         </div>
+       </div>
+      </footer>
     </main>
 
     <script src="./Script/script.js"></script>
